@@ -1,0 +1,75 @@
+@import "../styles/fonts";
+@import "../styles/variables";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+
+  body {
+    min-height: 100vh;
+    border: solid 1px @primary-lighter;
+    color: @primary-lighter;
+
+    a {
+      text-decoration: none;
+      cursor: pointer;
+      display: inline-block;
+    }
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+
+    /*FOOTER*/
+    footer {
+      background-color: @secondary;
+      padding: 32px @side-padding;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 16px;
+      font-family: @regular-font;
+
+      &.footer__block {
+        max-height: 100px;
+
+        .footer__block-logo {
+
+        }
+
+        .footer__link-container {
+          .links {
+            display: flex;
+            >:not(:last-child) {
+              margin-right: 62px;
+            }
+            .link {
+              color: @primary-lighter;
+              &:hover {
+                color: @primary;
+              }
+            }
+          }
+        }
+
+        .footer__email {
+          .email-link {
+            color: @primary;
+            &:hover {
+              color: @primary-dark;
+            }
+          }
+        }
+
+        .footer__cooperating {
+          >:not(:last-child) {
+            margin-right: 6px;
+          }
+        }
+      }
+    }
+
+  }
+}
