@@ -1,75 +1,87 @@
 @import "../styles/fonts";
 @import "../styles/variables";
+@import "../styles/reset";
 
-* {
-  box-sizing: border-box;
-  margin: 0;
+body {
+  min-height: 100vh;
+  border: solid 1px @primary-lighter;
 
-  body {
-    min-height: 100vh;
-    border: solid 1px @primary-lighter;
+  //FOOTER
+  footer {
+    background-color: @secondary;
+    padding: 32px @side-padding;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    font-family: @regular-font;
     color: @primary-lighter;
 
-    a {
-      text-decoration: none;
-      cursor: pointer;
-      display: inline-block;
+    @media (max-width: 1024px) {
+      padding: 32px @side-padding-1024;
+      > div {
+        margin-bottom: 12px;
+      }
     }
-    ul {
-      padding: 0;
-      margin: 0;
-      list-style: none;
+    @media (max-width: 567px) {
+      padding: 16px @side-padding-567;
+      font-size: 14px;
     }
 
+    &.footer__block {
+      max-height: 100px;
+      @media (max-width: 1024px) {
+        max-height: max-content;
+      }
 
-    /*FOOTER*/
-    footer {
-      background-color: @secondary;
-      padding: 32px @side-padding;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      font-size: 16px;
-      font-family: @regular-font;
+      .footer__link-container {
+        .links {
+          display: flex;
 
-      &.footer__block {
-        max-height: 100px;
-
-        .footer__block-logo {
-
-        }
-
-        .footer__link-container {
-          .links {
-            display: flex;
-            >:not(:last-child) {
-              margin-right: 62px;
+          > :not(:last-child) {
+            margin-right: 62px;
+            @media (max-width: 1024px) {
+              margin-right: 32px;
             }
-            .link {
-              color: @primary-lighter;
-              &:hover {
-                color: @primary;
-              }
+            @media (max-width: 768px) {
+              margin-right: 14px;
             }
           }
-        }
 
-        .footer__email {
-          .email-link {
-            color: @primary;
+          .link {
+            color: @primary-lighter;
+
             &:hover {
-              color: @primary-dark;
+              color: @primary;
             }
           }
         }
+      }
 
-        .footer__cooperating {
-          >:not(:last-child) {
-            margin-right: 6px;
+      .footer__email {
+        .email-link {
+          color: @primary;
+
+          &:hover {
+            color: @primary-dark;
+          }
+        }
+      }
+
+      .footer__cooperating {
+        > :not(:last-child) {
+          margin-right: 6px;
+          @media (max-width: 768px) {
+            margin-right: 2px;
           }
         }
       }
     }
+  }
+
+  //HEADER
+  header {
 
   }
 }

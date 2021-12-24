@@ -5,54 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet/less" type="text/css" href="../node_modules/normalize.css/normalize.css">
     <link rel="stylesheet/less" type="text/css" href="../assets/styles/home.css">
+    <link rel="stylesheet/less" type="text/css" href="../assets/styles/header.css">
     <title>Cookbook</title>
 </head>
 <body>
-    <header></header>
-
-    <footer class="footer__block">
-        <div class="footer__logo">
-            <a class="footer__logo-link" href="#">
-                <img class="footer__logo-img" src="../assets/images/footer/logo.svg" alt="Logo">
+    <header>
+        <nav  class="navbar">
+            <a class="navbar__logo logo-link" href="#">
+                <img class="navbar__logo-img" src="../assets/images/header/logo.svg" alt="Logo" />
             </a>
-        </div>
-        <div class="footer__link-container">
-            <ul class="links">
-                <li class="link-item">
-                    <a class="link">
-                        Cookbooks
-                    </a>
-                </li>
+            <div class="navbar__content ">
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact</a>
+                    </li>
+                </ul>
 
-                <li class="link-item">
-                    <a class="link">
-                        Recepies
-                    </a>
-                </li>
+                <div class="navbar__search">
+                    <input />
+                </div>
 
-                <li class="link-item">
-                    <a class="link">
-                        About Us
+                <div class="navbar__user">
+                    <a>
+                        <img src="../assets/images/header/user.svg" alt="User" />
+                        <span>
+                        Liza Hladkaya
+                    </span>
                     </a>
-                </li>
-            </ul>
-        </div>
-        <div class="footer__email">
-            <a class="email-link" href="mailto:plzfeedme@itechart.com">
-                plzfeedme@itechart.com
-            </a>
-        </div>
-        <div class="footer__cooperating">
-            <span class="footer__cooperating-title">
-                Study Project v2, 2021
-            </span>
-            <a class="footer__cooperating-link" href="https://www.itechart.by/" target="_blank">
-                <img src="../assets/images/footer/company-logo.svg" alt="Company logo" />
-            </a>
+                </div>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
 
-        </div>
-    </footer>
+
+
+<!--    <footer class="footer__block">-->
+<!--        <div class="footer__logo">-->
+<!--            <a class="footer__logo-link" href="#">-->
+<!--                <img class="footer__logo-img" src="../assets/images/footer/logo.svg" alt="Logo">-->
+<!--            </a>-->
+<!--        </div>-->
+<!--        <div class="footer__link-container">-->
+<!--            <ul class="links">-->
+<!--                <li class="link-item">-->
+<!--                    <a class="link">-->
+<!--                        Cookbooks-->
+<!--                    </a>-->
+<!--                </li>-->
+
+<!--                <li class="link-item">-->
+<!--                    <a class="link">-->
+<!--                        Recepies-->
+<!--                    </a>-->
+<!--                </li>-->
+
+<!--                <li class="link-item">-->
+<!--                    <a class="link">-->
+<!--                        About Us-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--        <div class="footer__email">-->
+<!--            <a class="email-link" href="mailto:plzfeedme@itechart.com">-->
+<!--                plzfeedme@itechart.com-->
+<!--            </a>-->
+<!--        </div>-->
+<!--        <div class="footer__cooperating">-->
+<!--            <span class="footer__cooperating-title">-->
+<!--                Study Project v2, 2021-->
+<!--            </span>-->
+<!--            <a class="footer__cooperating-link" href="https://www.itechart.by/" target="_blank">-->
+<!--                <img src="../assets/images/footer/company-logo.svg" alt="Company logo" />-->
+<!--            </a>-->
+
+<!--        </div>-->
+<!--    </footer>-->
 
 <script src="https://cdn.jsdelivr.net/npm/less@4.1.1" ></script>
+<script src="../assets/scripts/header.js" defer></script>
 </body>
 </html>
