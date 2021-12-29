@@ -1,0 +1,30 @@
+@import "../styles/fonts";
+@import "../styles/variables";
+@import "../styles/reset";
+
+body {
+  section {
+
+    .section-container {
+      padding: 0 12px;
+      background-color: @primary;
+      border-radius: 10px;
+      min-height: 650px;
+      width: auto;
+      & .section {
+        position: relative;
+
+        .section-content {
+          min-height: 650px;
+        }
+
+        .section-image {
+          position: absolute;
+        }
+      }
+    }
+  }
+}
+
+
+

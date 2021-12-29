@@ -11,8 +11,11 @@
     display: inline-block;
     color: @secondary;
     &:hover {
-      color: @secondary
+      color: @primary
     }
+    //&:focus {
+    //  color: @primary
+    //}
   }
 
   ul {
@@ -27,9 +30,20 @@
     border-radius: 10px;
     padding: 10px 16px;
     font-family: @regular-font;
+    color: @secondary;
     &:focus {
-      border-width: 1px;
-      border-style: solid;
+      outline-color: @primary;
+    }
+  }
+
+  button {
+    border-radius: 10px;
+    padding: 12px 32px;
+    &:hover {
+      cursor: pointer;
+    }
+    &:focus {
+      outline-color: @primary;
     }
   }
 }
