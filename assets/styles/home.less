@@ -7,78 +7,7 @@ body {
   border: solid 1px @primary-lighter;
 
   //FOOTER
-  footer {
-    background-color: @secondary;
-    padding: 32px @side-padding;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 16px;
-    font-family: @regular-font;
-    color: @primary-lighter;
 
-    @media (max-width: 1024px) {
-      padding: 32px @side-padding-1024;
-      > div {
-        margin-bottom: 12px;
-      }
-    }
-    @media (max-width: 567px) {
-      padding: 16px @side-padding-567;
-      font-size: 14px;
-    }
-
-    &.footer__block {
-      max-height: 100px;
-      @media (max-width: 1024px) {
-        max-height: max-content;
-      }
-
-      .footer__link-container {
-        .links {
-          display: flex;
-
-          > :not(:last-child) {
-            margin-right: 62px;
-            @media (max-width: 1024px) {
-              margin-right: 32px;
-            }
-            @media (max-width: 768px) {
-              margin-right: 14px;
-            }
-          }
-
-          .link {
-            color: @primary-lighter;
-
-            &:hover {
-              color: @primary;
-            }
-          }
-        }
-      }
-
-      .footer__email {
-        .email-link {
-          color: @primary;
-
-          &:hover {
-            color: @primary-dark;
-          }
-        }
-      }
-
-      .footer__cooperating {
-        > :not(:last-child) {
-          margin-right: 6px;
-          @media (max-width: 768px) {
-            margin-right: 2px;
-          }
-        }
-      }
-    }
-  }
 
   //HEADER
   header {

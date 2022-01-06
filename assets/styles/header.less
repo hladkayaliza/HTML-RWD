@@ -9,7 +9,7 @@ html {
 
     .app-header {
       font-size: 18px;
-      padding: 24px @side-padding;
+      padding: 18px @side-padding;
       font-family: @regular-font;
       background-color: @primary-lighter;
 
@@ -113,9 +113,6 @@ html {
       }
     }
   }
-
-
-
 }
 
 @media (max-width: 1024px) {
@@ -135,6 +132,7 @@ html {
   html {
     body {
       .app-header {
+        font-size: 16px;
         .navbar {
           width: 100%;
 
@@ -235,3 +233,14 @@ html {
   }
 }
 
+
+@media (max-width: 576px) {
+  html {
+    body {
+      .app-header {
+        font-size: 14px;
+        padding: 14px 14px;
+      }
+    }
+  }
+}
